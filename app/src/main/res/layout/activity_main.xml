@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!-- TextView for displaying the names and IDs -->
+
+    <!-- ImageView for displaying the main icon of the app -->
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/findit_icon"
+        android:layout_marginBottom="100dp"/>
+
+
+    <!-- ImageView for displaying a secondary icon of a fox -->
+    <ImageView
+        android:id="@+id/imgFoxIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        app:srcCompat="@drawable/fox_icon" />
+
+</LinearLayout>

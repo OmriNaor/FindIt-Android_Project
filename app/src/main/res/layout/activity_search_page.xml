@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchPageActivity">
+
+    <!-- Main Image View for displaying the selected or captured image -->
+    <ImageView
+        android:id="@+id/imgViewID"
+        android:layout_width="380dp"
+        android:layout_height="300dp"
+        android:background="@drawable/search_default_placeholder"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Container for the buttons -->
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- Horizontal container for the first two buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Button for uploading an image from the gallery -->
+            <Button
+                android:id="@+id/btnUploadGalleryID"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#D5562E"
+                android:text="Upload from gallery"
+                android:textColor="#FFFFFF"
+                android:padding="16dp"
+                android:textSize="16sp" />
+
+            <!-- Button for taking a new picture with the camera -->
+            <Button
+                android:id="@+id/btnTakePictureID"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="#D5562E"
+                android:text="Take a picture"
+                android:textColor="#FFFFFF"
+                android:padding="16dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Button for initiating the search based on the displayed image -->
+        <Button
+            android:id="@+id/btnSearchID"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#D5562E"
+            android:text="Search"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
